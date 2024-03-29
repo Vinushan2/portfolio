@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/portfolio.png">
+    <script src="https://kit.fontawesome.com/ba84d85ad7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Future-Focused Web Developer & Software Engineer</p>
+            <h1>Hi, I'm <span>Vinushan </span> </h1>
+        </div>
+    </div>
+</div>
+<!----------about-------------->
+<div id="about"></div>
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="Images/user.png"   >
+        </div>
+        <div class="about-col-2">
+            <h1 class="subtittle">About Me</h1>
+            <p>Hello! My name is Vinushan and I hail from the beautiful town of Puttalam. Currently, I am a dedicated undergraduate student pursuing a Bachelor's degree in Information Technology from the esteemed University of Colombo. With a passion for technology and a keen interest in software development, I have honed my skills in Java, HTML, CSS, and JavaScript. I am deeply fascinated by the world of coding and enjoy the creative process of crafting solutions to real-world problems. Outside of my academic pursuits, I am an avid learner, always seeking to expand my knowledge and delve into new technologies. I am excited to embark on this journey, leveraging my skills and enthusiasm to contribute meaningfully to the ever-evolving field of technology.</p>
+            <div class="tab-tittles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+            <ul>
+            <li><span>Web Development</span> <br> Sufficient knowledge in HTML, CSS, and JavaScript </li>
+            <li><span>Programming</span> <br> Sufficient knowledge in Java</li>
+            <li><span>Git and GitHub</span> <br> Sufficient knowledge in the Git environment </li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>Degree</span> <br> Currently pursuing a BIT degree at UCSC </li>
+                <li><span>Diploma</span> <br> Completed a web development diploma</li>
+                <li><span>Diploma</span> <br> Completed a computer science diploma</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!--------Services-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Web Development</h2>
+                <p>Embark on your journey into the world of web development with our beginner-friendly services. From crafting simple yet elegant websites to diving into the basics of building interactive web applications, we're here to guide you every step of the way. Our team of budding developers is passionate about honing their skills and eager to help you kickstart your online presence. Let's work together to bring your digital dreams to life, one code snippet at a time</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Swing User Interface</h2>
+                <p>Step into the realm of Java Swing user interface development with us. As an aspiring undergraduate student, you'll explore the fundamentals of building sleek and functional desktop applications. From designing intuitive interfaces to mastering event-driven programming, our services cater to beginners eager to dive into the world of Java GUI development. Join us on this exciting journey as we craft user-friendly applications that showcase your budding skills and creativity. Let's turn your ideas into captivating software experiences!</p>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!---------------- portfolio----------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png" >
+                <div class="layer">
+                    <h3>Web Development Portfolio: Showcase of Projects</h3>
+                    <p>
+                        Browse through my web development portfolio to see a collection of projects showcasing my skills and expertise in HTML, CSS, JavaScript, and more. Additionally, I have created a number game, demonstrating my proficiency in interactive web applications and game development</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png" >
+                <div class="layer">
+                    <h3>Java Swing UI Development: Simplifying User Interaction</h3>
+                    <p>I designed intuitive user interfaces using Java Swing, enhancing usability and functionality. These interfaces provide seamless interaction for users, employing fundamental Java Swing components. Through this, I honed my skills in UI design and Java Swing development</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png" >
+                <div class="layer">
+                    <h3>Java CRUD Application: Data Management</h3>
+                    <p>Built a Java CRUD application for streamlined data handling. This project covers essential database operations like add, view, update, and delete. It enhanced my database integration and UI design skills for future projects.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+
+<!--------------Contect----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contct Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>vinunadhan22@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0777-953623</p>
+                <div class="social-icones">
+
+                    <a href="https://www.instagram.com/vinushan_2?igsh=aXBoMmlheWF2bDdv"><i class="fa-brands fa-square-instagram"></i></i></a>
+                </div>
+
+                <br><a href="Images/VinuNew.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> Vinushan</p>
+    </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tab){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+
+        }
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tab).classList.add("active-tab")
+
+        
+    }
+
+    
+    
+</script>
+
+<script>
+    var side=document.getElementById("sidemenu");
+
+    function openmenu(){
+        side.style.right="0";
+    }
+
+    
+    function closemenu(){
+        side.style.right="-200px";
+    }
+</script>
+    
+</body>
+</html>
